@@ -1,1 +1,1090 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
 
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="theme-color" content="#0b0d10">
+
+    <title>FrameMaster | مدیریت و بهینه‌سازی پنجره</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         APP
+    ========================== -->
+
+    <div class="app">
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-top">
+
+                <div class="brand">
+
+                    <div class="brand-icon">
+                        <span>FM</span>
+                    </div>
+
+                    <div class="brand-text">
+                        <h1>FrameMaster</h1>
+                        <span>Window Optimizer</span>
+                    </div>
+
+                </div>
+
+                <button class="close-sidebar"
+                        id="closeSidebar"
+                        aria-label="بستن منو">
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav class="navigation">
+
+                <div class="nav-title">
+                    منوی اصلی
+                </div>
+
+                <button class="nav-item active"
+                        data-page="dashboard">
+
+                    <span class="nav-icon">⌂</span>
+
+                    <span>
+                        داشبورد
+                    </span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="projects">
+
+                    <span class="nav-icon">▣</span>
+
+                    <span>
+                        پروژه‌ها
+                    </span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="windows">
+
+                    <span class="nav-icon">▤</span>
+
+                    <span>
+                        پنجره‌ها
+                    </span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="optimizer">
+
+                    <span class="nav-icon">✂</span>
+
+                    <span>
+                        بهینه‌سازی برش
+                    </span>
+
+                </button>
+
+
+                <div class="nav-title second">
+                    ابزارها
+                </div>
+
+
+                <button class="nav-item"
+                        data-page="reports">
+
+                    <span class="nav-icon">▥</span>
+
+                    <span>
+                        گزارش‌ها
+                    </span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="settings">
+
+                    <span class="nav-icon">⚙</span>
+
+                    <span>
+                        تنظیمات
+                    </span>
+
+                </button>
+
+            </nav>
+
+
+            <!-- Sidebar Bottom -->
+
+            <div class="sidebar-bottom">
+
+                <div class="app-version">
+                    <span>FrameMaster</span>
+                    <small>Version 1.0.0</small>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================
+             MAIN
+        ========================== -->
+
+        <main class="main-content">
+
+
+            <!-- HEADER -->
+
+            <header class="topbar">
+
+                <button class="menu-button"
+                        id="openSidebar"
+                        aria-label="باز کردن منو">
+
+                    ☰
+
+                </button>
+
+
+                <div class="page-heading">
+
+                    <span class="eyebrow">
+                        FRAME OPTIMIZER
+                    </span>
+
+                    <h2 id="pageTitle">
+                        داشبورد
+                    </h2>
+
+                </div>
+
+
+                <div class="topbar-actions">
+
+                    <button class="icon-button"
+                            title="اعلان‌ها">
+
+                        🔔
+
+                        <span class="notification-dot"></span>
+
+                    </button>
+
+
+                    <div class="profile">
+
+                        <div class="profile-avatar">
+                            AK
+                        </div>
+
+                        <div class="profile-info">
+
+                            <strong>
+                                کاربر
+                            </strong>
+
+                            <span>
+                                مدیر کارگاه
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =========================
+                 PAGE CONTAINER
+            ========================== -->
+
+            <section class="page-container">
+
+
+                <!-- =========================
+                     DASHBOARD PAGE
+                ========================== -->
+
+                <div class="page active"
+                     id="dashboard">
+
+
+                    <!-- Welcome -->
+
+                    <section class="welcome-section">
+
+                        <div>
+
+                            <span class="section-label">
+                                خوش آمدید 👋
+                            </span>
+
+                            <h3>
+                                آماده‌ای برای یک برش دقیق؟
+                            </h3>
+
+                            <p>
+                                پروژه جدیدت را ایجاد کن و بهترین ترکیب برش
+                                را با کمترین پرت پیدا کن.
+                            </p>
+
+                        </div>
+
+
+                        <button class="primary-button"
+                                id="newProjectButton">
+
+                            <span class="button-icon">
+                                +
+                            </span>
+
+                            پروژه جدید
+
+                        </button>
+
+                    </section>
+
+
+                    <!-- Statistics -->
+
+                    <section class="stats-grid">
+
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon">
+                                ▣
+                            </div>
+
+                            <div class="stat-content">
+
+                                <span>
+                                    پروژه‌ها
+                                </span>
+
+                                <strong id="projectCount">
+                                    0
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon">
+                                🪟
+                            </div>
+
+                            <div class="stat-content">
+
+                                <span>
+                                    پنجره‌ها
+                                </span>
+
+                                <strong id="windowCount">
+                                    0
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon">
+                                ✂
+                            </div>
+
+                            <div class="stat-content">
+
+                                <span>
+                                    شاخه مصرف‌شده
+                                </span>
+
+                                <strong id="profileCount">
+                                    0
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon">
+                                %
+                            </div>
+
+                            <div class="stat-content">
+
+                                <span>
+                                    کاهش پرت
+                                </span>
+
+                                <strong id="wastePercent">
+                                    0%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Main Dashboard Grid -->
+
+                    <section class="dashboard-grid">
+
+
+                        <!-- New Project Card -->
+
+                        <div class="dashboard-card new-project-card">
+
+                            <div class="card-header">
+
+                                <div>
+
+                                    <span class="card-kicker">
+                                        شروع سریع
+                                    </span>
+
+                                    <h3>
+                                        پروژه جدید بساز
+                                    </h3>
+
+                                </div>
+
+                                <div class="card-symbol">
+                                    +
+                                </div>
+
+                            </div>
+
+
+                            <p>
+                                ابعاد پنجره‌ها را وارد کن تا FrameMaster
+                                بهترین نقشه برش را برایت محاسبه کند.
+                            </p>
+
+
+                            <button class="outline-button"
+                                    id="startProject">
+
+                                شروع پروژه
+
+                                <span>
+                                    ←
+                                </span>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Optimizer Preview -->
+
+                        <div class="dashboard-card optimizer-card">
+
+                            <div class="card-header">
+
+                                <div>
+
+                                    <span class="card-kicker">
+                                        CUT OPTIMIZER
+                                    </span>
+
+                                    <h3>
+                                        بهینه‌سازی برش
+                                    </h3>
+
+                                </div>
+
+                                <div class="card-symbol scissors">
+                                    ✂
+                                </div>
+
+                            </div>
+
+
+                            <div class="profile-preview">
+
+                                <div class="profile-line">
+
+                                    <span class="used-part">
+                                        1450
+                                    </span>
+
+                                    <span class="used-part">
+                                        1450
+                                    </span>
+
+                                    <span class="used-part">
+                                        1200
+                                    </span>
+
+                                    <span class="waste-part">
+                                        پرت
+                                    </span>
+
+                                </div>
+
+                                <div class="profile-label">
+
+                                    <span>
+                                        شاخه پروفیل
+                                    </span>
+
+                                    <strong>
+                                        6000 mm
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="optimization-result">
+
+                                <span>
+                                    وضعیت بهینه‌سازی
+                                </span>
+
+                                <strong>
+                                    آماده
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Quick Actions -->
+
+                    <section class="section-block">
+
+                        <div class="section-header">
+
+                            <div>
+
+                                <span class="section-label">
+                                    ابزارهای سریع
+                                </span>
+
+                                <h3>
+                                    چه کاری می‌خواهی انجام دهی؟
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="quick-actions">
+
+
+                            <button class="quick-card"
+                                    data-page-target="windows">
+
+                                <div class="quick-icon">
+                                    🪟
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        افزودن پنجره
+                                    </strong>
+
+                                    <span>
+                                        ثبت ابعاد و نوع بازشو
+                                    </span>
+
+                                </div>
+
+                                <span class="quick-arrow">
+                                    ←
+                                </span>
+
+                            </button>
+
+
+                            <button class="quick-card"
+                                    data-page-target="optimizer">
+
+                                <div class="quick-icon">
+                                    ✂
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        محاسبه برش
+                                    </strong>
+
+                                    <span>
+                                        پیدا کردن بهترین تقسیم‌بندی
+                                    </span>
+
+                                </div>
+
+                                <span class="quick-arrow">
+                                    ←
+                                </span>
+
+                            </button>
+
+
+                            <button class="quick-card"
+                                    data-page-target="reports">
+
+                                <div class="quick-icon">
+                                    📊
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        گزارش پروژه
+                                    </strong>
+
+                                    <span>
+                                        مشاهده مصرف و میزان پرت
+                                    </span>
+
+                                </div>
+
+                                <span class="quick-arrow">
+                                    ←
+                                </span>
+
+                            </button>
+
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Recent Projects -->
+
+                    <section class="section-block">
+
+                        <div class="section-header">
+
+                            <div>
+
+                                <span class="section-label">
+                                    پروژه‌های اخیر
+                                </span>
+
+                                <h3>
+                                    آخرین پروژه‌ها
+                                </h3>
+
+                            </div>
+
+
+                            <button class="text-button"
+                                    data-page-target="projects">
+
+                                مشاهده همه
+                                ←
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="empty-state">
+
+                            <div class="empty-icon">
+                                ▱
+                            </div>
+
+                            <h4>
+                                هنوز پروژه‌ای ساخته نشده
+                            </h4>
+
+                            <p>
+                                اولین پروژه پنجره‌ات را ایجاد کن.
+                            </p>
+
+                            <button class="primary-button small"
+                                    id="emptyCreateProject">
+
+                                + ایجاد پروژه
+
+                            </button>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- =========================
+                     PROJECTS PAGE
+                ========================== -->
+
+                <div class="page"
+                     id="projects">
+
+                    <div class="page-intro">
+
+                        <span class="section-label">
+                            PROJECTS
+                        </span>
+
+                        <h3>
+                            پروژه‌ها
+                        </h3>
+
+                        <p>
+                            پروژه‌های پنجره خود را مدیریت کنید.
+                        </p>
+
+                    </div>
+
+
+                    <div class="empty-state large">
+
+                        <div class="empty-icon">
+                            ▣
+                        </div>
+
+                        <h4>
+                            پروژه‌ای وجود ندارد
+                        </h4>
+
+                        <p>
+                            برای شروع یک پروژه جدید ایجاد کنید.
+                        </p>
+
+                        <button class="primary-button"
+                                id="projectsCreateButton">
+
+                            + پروژه جدید
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     WINDOWS PAGE
+                ========================== -->
+
+                <div class="page"
+                     id="windows">
+
+                    <div class="page-intro">
+
+                        <span class="section-label">
+                            WINDOWS
+                        </span>
+
+                        <h3>
+                            پنجره‌ها
+                        </h3>
+
+                        <p>
+                            ابعاد و مشخصات پنجره‌ها را مدیریت کنید.
+                        </p>
+
+                    </div>
+
+
+                    <div class="empty-state large">
+
+                        <div class="empty-icon">
+                            🪟
+                        </div>
+
+                        <h4>
+                            هنوز پنجره‌ای ثبت نشده
+                        </h4>
+
+                        <p>
+                            در نسخه بعدی فرم ثبت ابعاد اینجا قرار می‌گیرد.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     OPTIMIZER PAGE
+                ========================== -->
+
+                <div class="page"
+                     id="optimizer">
+
+                    <div class="page-intro">
+
+                        <span class="section-label">
+                            CUT OPTIMIZER
+                        </span>
+
+                        <h3>
+                            بهینه‌سازی برش
+                        </h3>
+
+                        <p>
+                            بهترین تقسیم‌بندی شاخه‌های پروفیل را پیدا کنید.
+                        </p>
+
+                    </div>
+
+
+                    <div class="optimizer-placeholder">
+
+                        <div class="optimizer-visual">
+
+                            <span>6000</span>
+
+                            <div class="visual-bar">
+
+                                <i style="width:24%">
+                                    1450
+                                </i>
+
+                                <i style="width:24%">
+                                    1450
+                                </i>
+
+                                <i style="width:20%">
+                                    1200
+                                </i>
+
+                                <i class="waste">
+                                    پرت
+                                </i>
+
+                            </div>
+
+                            <small>
+                                بهترین ترکیب برش
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     REPORTS PAGE
+                ========================== -->
+
+                <div class="page"
+                     id="reports">
+
+                    <div class="page-intro">
+
+                        <span class="section-label">
+                            REPORTS
+                        </span>
+
+                        <h3>
+                            گزارش‌ها
+                        </h3>
+
+                        <p>
+                            گزارش مصرف پروفیل و میزان پرت پروژه‌ها.
+                        </p>
+
+                    </div>
+
+
+                    <div class="empty-state large">
+
+                        <div class="empty-icon">
+                            📊
+                        </div>
+
+                        <h4>
+                            هنوز گزارشی وجود ندارد
+                        </h4>
+
+                        <p>
+                            بعد از ایجاد پروژه، گزارش‌ها اینجا نمایش داده می‌شوند.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     SETTINGS PAGE
+                ========================== -->
+
+                <div class="page"
+                     id="settings">
+
+                    <div class="page-intro">
+
+                        <span class="section-label">
+                            SETTINGS
+                        </span>
+
+                        <h3>
+                            تنظیمات
+                        </h3>
+
+                        <p>
+                            تنظیمات برنامه و مشخصات کارگاه.
+                        </p>
+
+                    </div>
+
+
+                    <div class="settings-card">
+
+                        <div class="settings-row">
+
+                            <div>
+
+                                <strong>
+                                    طول استاندارد شاخه
+                                </strong>
+
+                                <span>
+                                    طول پیش‌فرض پروفیل برای محاسبات
+                                </span>
+
+                            </div>
+
+                            <div class="setting-value">
+                                6000 mm
+                            </div>
+
+                        </div>
+
+
+                        <div class="settings-row">
+
+                            <div>
+
+                                <strong>
+                                    واحد اندازه‌گیری
+                                </strong>
+
+                                <span>
+                                    میلی‌متر
+                                </span>
+
+                            </div>
+
+                            <div class="setting-value">
+                                mm
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================
+         MOBILE OVERLAY
+    ========================== -->
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay">
+    </div>
+
+
+    <!-- =========================
+         NEW PROJECT MODAL
+    ========================== -->
+
+    <div class="modal"
+         id="projectModal"
+         aria-hidden="true">
+
+        <div class="modal-backdrop"
+             id="modalBackdrop">
+        </div>
+
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <div>
+
+                    <span class="section-label">
+                        NEW PROJECT
+                    </span>
+
+                    <h3>
+                        ایجاد پروژه جدید
+                    </h3>
+
+                </div>
+
+                <button class="modal-close"
+                        id="closeModal">
+
+                    ×
+
+                </button>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <div class="input-group">
+
+                    <label for="projectName">
+                        نام پروژه
+                    </label>
+
+                    <input type="text"
+                           id="projectName"
+                           placeholder="مثلاً پروژه آقای احمدی">
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="customerName">
+                        نام مشتری
+                    </label>
+
+                    <input type="text"
+                           id="customerName"
+                           placeholder="نام مشتری">
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+
+                        <label for="profileType">
+                            نوع پروفیل
+                        </label>
+
+                        <select id="profileType">
+
+                            <option value="upvc">
+                                UPVC
+                            </option>
+
+                            <option value="aluminium">
+                                آلومینیوم
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="profileLength">
+                            طول شاخه
+                        </label>
+
+                        <input type="number"
+                               id="profileLength"
+                               value="6000"
+                               min="1000">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-footer">
+
+                <button class="secondary-button"
+                        id="cancelModal">
+
+                    انصراف
+
+                </button>
+
+                <button class="primary-button"
+                        id="createProject">
+
+                    ایجاد پروژه
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="app.js"></script>
+
+</body>
+</html>
